@@ -14,6 +14,14 @@ struct ContentView:View {
             
             Rectangle().fill(.red).stroke(.black, lineWidth:10).frame(width: 250, height: 100)
             RoundedRectangle(cornerRadius: 10).fill(.red).stroke(.black, lineWidth:10).frame(width: 250, height: 100)
+            UnevenRoundedRectangle(
+                cornerRadii: .init(topLeading: 20,bottomLeading: 20)
+            ).fill(.red).frame(width: 250, height: 100)
+            Capsule().frame(width: 250, height: 100)
+            Ellipse().frame(width: 250, height: 100)
+            Circle().frame(width: 250, height: 100)
+            Circle().frame(width: 250, height: 100)
+            Circle().frame(width: 250, height: 100)
             
         }
     }
